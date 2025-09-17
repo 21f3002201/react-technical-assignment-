@@ -16,14 +16,14 @@ export const assessmentsHandlers = [
     });
   }),
 
-  http.get('/assessments/:jobId', async ({ params }) => {
+  http.get('/assessments/:jobId', async ({ params: _params }) => {
     await delay();
     
-    const assessment = await getAssessmentByJobId(params.jobId as string);
+  const assessment = await getAssessmentByJobId(_params.jobId as string);
     return HttpResponse.json(assessment);
   }),
 
-  http.put('/assessments/:jobId', async ({ params, request }) => {
+  http.put('/assessments/:jobId', async ({ params: _params, request }) => {
     await delay();
     maybeFail();
     
@@ -32,12 +32,12 @@ export const assessmentsHandlers = [
     return HttpResponse.json(savedAssessment);
   }),
 
-  http.post('/assessments/:jobId/submit', async ({ params, request }) => {
+  http.post('/assessments/:jobId/submit', async ({ params: _params, request }) => {
     await delay();
     maybeFail();
     
     const responses = await request.json() as any;
-    const result = await submitAssessmentResponse(params.jobId as string, responses);
+  const result = await submitAssessmentResponse(_params.jobId as string, responses);
     return HttpResponse.json(result);
   }),
 ];

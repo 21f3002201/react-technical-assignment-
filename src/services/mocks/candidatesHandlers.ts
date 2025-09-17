@@ -1,5 +1,5 @@
 import { http, HttpResponse } from 'msw';
-import { getAllCandidates, updateCandidate, getCandidateStatistics, getCandidateTimeline, candidatesDb } from '../db/candidatesDb';
+import { getAllCandidates, updateCandidate, getCandidateTimeline, candidatesDb } from '../db/candidatesDb';
 import { delay, maybeFail } from '../../utils/latency';
 
 export const candidatesHandlers = [
