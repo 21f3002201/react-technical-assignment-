@@ -53,5 +53,11 @@ A modern React + TypeScript application for managing jobs, candidates, and asses
 ---
 
 ### Links
-- **GitHub:** _To be added_
-- **Deployment:** _To be added_
+- **GitHub:** https://github.com/21f3002201/react-technical-assignment-
+- **Deployment:** [https://reacttechnicalassignment.vercel.app](https://reacttechnicalassignment.vercel.app)
+
+---
+
+### Latest Deployment
+- Commit: `d6523d9` (Fix TypeScript unused variable errors for Vercel build)
+- Vercel: [reacttechnicalassignment.vercel.app](https://reacttechnicalassignment.vercel.app)
